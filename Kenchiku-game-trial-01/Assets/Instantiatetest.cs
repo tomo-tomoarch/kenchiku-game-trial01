@@ -6,6 +6,7 @@ public class Instantiatetest : MonoBehaviour
 {
     public GameObject original;
     public int j;
+    
         
         // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class Instantiatetest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
         
 }
