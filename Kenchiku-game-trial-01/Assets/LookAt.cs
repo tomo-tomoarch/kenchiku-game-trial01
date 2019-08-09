@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-
+    Vector3 axis = new Vector3(0, 1, 0);
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +15,6 @@ public class LookAt : MonoBehaviour
     void Update()
     {
         this.transform.LookAt(Camera.main.transform);
+        this.transform.Rotate(axis, 180);
     }
 }
