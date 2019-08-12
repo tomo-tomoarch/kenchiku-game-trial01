@@ -40,11 +40,21 @@ public class MoveCamera: MonoBehaviour
         }
         // 前に移動
         if (Input.GetKey (KeyCode.UpArrow)) {
-            this.transform.Translate (0.0f,0.0f, key_sensitivity);
+            this.transform.Translate (0.0f, key_sensitivity, 0.0f);
         }
         // 後ろに移動
         if (Input.GetKey (KeyCode.DownArrow)) {
-            this.transform.Translate (0.0f,0.0f,-key_sensitivity);
+            this.transform.Translate (0.0f, -key_sensitivity, 0.0f);
+        }
+        // 前に移動
+        if (Input.GetKey(KeyCode.Backslash))
+        {
+            this.transform.Translate(0.0f, 0.0f, key_sensitivity);
+        }
+        // 後ろに移動
+        if (Input.GetKey(KeyCode.Slash))
+        {
+            this.transform.Translate(0.0f, 0.0f, -key_sensitivity);
         }
     }
 }
